@@ -192,9 +192,9 @@
   ("C-x n" #'/hydras/narrow/body)
   ("C-x p" #'proced))
 
-(after "vkill-autoloads"
-  (autoload 'vkill "vkill" nil t)
-  (global-set-key (kbd "C-x p") 'vkill))
+;(after "vkill-autoloads" see config/config-os.el
+;  (autoload 'vkill "vkill" nil t)
+;  (global-set-key (kbd "C-x p") 'vkill))
 
 (/bindings/define-keys (current-global-map)
   ("C-s"   #'isearch-forward-regexp)

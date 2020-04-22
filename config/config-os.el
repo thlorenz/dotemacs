@@ -26,8 +26,8 @@
   (require-package 'osx-trash)
   (osx-trash-setup)
 
-  (require-package 'reveal-in-osx-finder)
-  (require-package 'vkill))
+  (require-package 'reveal-in-osx-finder))
+; (require-package 'vkill)) currently doesn't install due to certificate issues
 
 (defun /os/reveal-in-os ()
   (interactive)
