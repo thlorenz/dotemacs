@@ -211,12 +211,4 @@
 (global-unset-key (kbd "C-x m"))
 
 
-(global-set-key (kbd "C-x C-c") (bind (message "Thou shall not quit!")))
-(after 'evil
-  (defadvice evil-quit (around dotemacs activate)
-    (message "Thou shall not quit!"))
-  (defadvice evil-quit-all (around dotemacs activate)
-    (message "Thou shall not quit!")))
-
-
 (provide 'config-bindings)
